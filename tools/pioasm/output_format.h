@@ -11,7 +11,7 @@
 #include <map>
 #include <string>
 #include <memory>
-
+#include <cstdint>
 #include "pio_enums.h"
 
 typedef unsigned int uint;
