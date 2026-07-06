@@ -90,7 +90,7 @@ if (EXISTS ${PICO_BTSTACK_PATH}/${BTSTACK_TEST_PATH})
         ${PICO_BTSTACK_PATH}/src/ble/gatt-service/device_information_service_server.c
         ${PICO_BTSTACK_PATH}/src/ble/gatt-service/device_information_service_client.c
         ${PICO_BTSTACK_PATH}/src/ble/gatt-service/heart_rate_service_server.c
-        ${PICO_BTSTACK_PATH}/src/ble/gatt-service/hids_client.c
+        ${PICO_BTSTACK_PATH}/src/ble/gatt-service/hids_host.c
         ${PICO_BTSTACK_PATH}/src/ble/gatt-service/hids_device.c
         ${PICO_BTSTACK_PATH}/src/ble/gatt-service/nordic_spp_service_server.c
         ${PICO_BTSTACK_PATH}/src/ble/gatt-service/ublox_spp_service_server.c
@@ -332,7 +332,7 @@ if (EXISTS ${PICO_BTSTACK_PATH}/${BTSTACK_TEST_PATH})
         set_source_files_properties(
             ${PICO_BTSTACK_PATH}/src/ble/att_server.c
             ${PICO_BTSTACK_PATH}/src/ble/gatt-service/device_information_service_server.c
-            ${PICO_BTSTACK_PATH}/src/ble/gatt-service/hids_client.c
+            ${PICO_BTSTACK_PATH}/src/ble/gatt-service/hids_host.c
             ${PICO_BTSTACK_PATH}/src/btstack_util.c
             ${PICO_BTSTACK_PATH}/src/btstack_crypto.c
             ${PICO_BTSTACK_PATH}/src/classic/a2dp.c
@@ -395,7 +395,7 @@ if (EXISTS ${PICO_BTSTACK_PATH}/${BTSTACK_TEST_PATH})
             COMPILE_OPTIONS "-Wno-unused-parameter;-Wno-sign-compare"
             )
         set_source_files_properties(
-            ${PICO_BTSTACK_PATH}/src/ble/gatt-service/hids_client.c
+            ${PICO_BTSTACK_PATH}/src/ble/gatt-service/hids_host.c
             PROPERTIES
             COMPILE_OPTIONS "-Wno-cast-qual;-Wno-null-dereference"
             )
